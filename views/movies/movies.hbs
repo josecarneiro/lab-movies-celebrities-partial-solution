@@ -1,0 +1,15 @@
+<h2>Movies List</h2>
+
+{{#each movies}}
+<div class="movie">
+  <h3>{{title}}</h3>
+  <p>{{plot}}</p>
+  <p>{{genre}}</p>
+  <strong>Cast</strong>
+  <ul>
+    {{#each cast}}
+    <li>{{name}}</li>
+    {{/each}}
+  </ul>
+</div>
+{{/each}}

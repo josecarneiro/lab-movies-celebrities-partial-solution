@@ -1,0 +1,21 @@
+<h2>Create celebrities</h2>
+
+<form method="POST">
+  <label for="input-title">Title</label>
+  <input id="input-title" type="text" placeholder="Title" name="title" />
+
+  <label for="input-genre">Genre</label>
+  <input id="input-genre" type="text" placeholder="genre" name="genre" />
+
+  <label for="input-plot">Plot</label>
+  <input id="input-plot" type="text" placeholder="plot" name="plot" />
+
+  <label for="input-cast">Cast</label>
+  <select id="input-cast" multiple name="cast">
+    {{#each celebrities}}
+    <option value="{{_id}}">{{name}}</option>
+    {{/each}}
+  </select>
+
+  <button>Create</button>
+</form>
